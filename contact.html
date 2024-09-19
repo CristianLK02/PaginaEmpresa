@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - CristianWeb</title>
+    <link rel="icon" type="image/x-icon" href="/imagenes/logo.png">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <section>
+            <a href="home.html"><img src="imagenes/logo-completo.png" alt="Logo" width="200px"></a>
+        </section>
+        <section>
+            <nav class="menu">
+                <ul>
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre mí</a></li>
+                    <li><a class="active" href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <div id="cabecera-sobremi">
+            <h1>CONTACTO</h1>
+            <h2>Contacta conmigo si tienes problemas en el sitio web</h2>
+        </div>
+        
+        <section id="quiensoy">
+            <div>
+                <!-- <h2>DATOS DE CONTACTO</h2> -->
+                <h3>DATOS DE CONTACTO</h3>
+                <form>
+                    <div id="principal">
+                        <div id="form">
+                            <!-- El atributo "required" indica que el campo e obligatorio -->
+                            <label>Nombre</label><br>
+                            <input type="text" maxlength="30" placeholder="Escribe aquí tu nombre..." minlength="3" maxlenght="30" required ><br>
+                            <label>Apellidos</label><br>
+                            <input type="text" maxlength="30" placeholder="Escribe aquí tus apellidos..." required><br>
+                            <label>Pais</label><br>
+                            <select id="pais">
+                                <option>- Selecciona un país - </option>
+                                <option>España</option>
+                                <option>Francia</option>
+                                <option>Alemania</option>
+                                <option>Estados Unidos</option>
+                            </select>
+                            <label>Email</label>
+                            <input type="email" required placeholder="Escribe tu email...">
+                            <label>Edad (años)</label>
+                            <input type="number" placeholder="Escribe tu edad..." max="99" min="18">
+                            <br>
+                            <label>Asunto</label>
+                            <input type="text" placeholder="Escribe tu asunto del mensaje" maxlength="84" required>
+                            <label>Mensaje</label>
+                            <textarea cols="95" rows="15" maxlength="500" placeholder="Escribe aquí tu consulta"></textarea>
+                            <p>Max. 500 carácteres</p>
+                        </div>
+                        <div id="botones">
+                            <input type="submit" id="botonEnviar" value="Enviar">
+                            <input type="reset" id="botonReset" value="Cancelar">
+                        </div>
+                        
+                    </div>
+                </form>
+            
+            </div>
+        </section>
+        <footer>
+            <p>Cristian López Kostiouk &copy 2022</p>
+        </footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+*{margin:0;padding: 0;font-family:'Poppins', sans-serif;box-sizing: border-box;}
+
+header{
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+    display: inline-flex;
+    width: 100%;
+}
+
+section a{cursor:default;user-select: none;}
+
+body{
+    background-color: rgb(27, 27, 27);
+}
+
+#cabecera{
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgba(58,82,230,1) 0%, rgba(53,236,180,1) 100%);
+    padding: 8em 0px;
+    margin-bottom: 100px;
+}
+
+#cabecera-html{
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(230, 58, 58) 0%, rgb(236, 105, 53) 100%);
+    padding: 8em 0px;
+    margin-bottom: 100px;
+}
+
+#cabecera-css{
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(58, 61, 230) 0%, rgb(53, 102, 236) 100%);
+    padding: 8em 0px;
+    margin-bottom: 100px;
+}
+
+#cabecera-sobremi{
+    text-align: center;
+    color: white;
+    background: linear-gradient(90deg, rgb(42, 98, 182) 0%, rgb(53, 169, 236) 100%);
+    padding: 8em 0px;
+    margin-bottom: 100px;
+}
+
+h1{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+h2{font-weight: 600;font-size: 18px;}
+
+/* Menu */
+.active{color: white;}
+.menu{padding-top: 2px;}
+nav a{
+    text-decoration:none;
+    color: gray;
+    font-size:14px;
+    transition: ease 0.2s;
+} 
+nav li{
+    display:inline-block;
+    padding:6px 20px;
+    text-align:center;
+    color:#fff;
+}
+nav a:hover{
+    color:white;
+    transition: ease 0.2s;
+}
+
+/* Servicios */
+h2{color: white;text-align: center;}
+#servicios{display: flex;margin: 30px auto;width: 60%;}
+.servicio{
+    background-color: rgb(39, 39, 39);
+    border-radius: 12px;
+    margin: auto 10px;
+    padding: 14px 100px;
+    border-top: solid rgb(39, 39, 39) 0px;
+    transition: ease-out 0.5s;
+}
+.servicio:hover{
+    background-color: rgb(39, 39, 39);
+    border-radius: 12px;
+    margin: auto 10px;
+    padding: 14px 100px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    border-top: solid rgba(58,82,230,1) 12px;
+    transition: ease-out 0.5s;
+}
+.servicio img{
+    margin: auto;
+    display: block;
+}
+.servicio h4{color: white;font-weight: 600;text-align: center;}
+.servicio p{color: gray;text-align: center;font-size: 14px;}
+
+/* Explicación */
+#explicacion{
+    width: 60%;
+    margin: 5em auto;
+}
+#explicacion h3{
+    color: white;
+    font-size: 26px;
+}
+#explicacion p{color: gray;font-size: 14px;}
+#explicacion span{
+    color: rgb(92, 92, 92);
+    font-style: italic;
+    font-size: 12px;
+}
+#explicacion a{color: rgb(116, 116, 116);}
+#iniciar{color: white;text-align: center;margin: 100px;}
+/* #iniciar a{
+    background-color: rgb(58,82,230);
+    border: 0;
+    padding: 14px 68px;
+    border-radius: 99px;
+    color: white;
+    transition: ease 0.2s;
+    margin: 2em;
+    text-decoration: none;
+}
+#iniciar a:hover{
+    background-color: rgb(47, 66, 187);
+    border: 0;
+    padding: 14px 68px;
+    border-radius: 99px;
+    color: white;
+    transition: ease 0.2s;
+} */
+
+#quiensoy{
+    width: 60%;
+    margin: 5em auto;
+    display: flex;
+}
+#quiensoy h3{
+    color: white;
+    font-size: 26px;
+}
+#quiensoy p{color: gray;font-size: 14px;}
+#quiensoy span{
+    color: rgb(218, 218, 218);
+}
+#quiensoy a{color: rgb(116, 116, 116);}
+#quiensoy div figure img{border-radius: 15px;}
+
+
+/* Fin de página */
+footer{
+    background-color: rgb(39, 39, 39);
+    padding: 12px 0px;
+    user-select: none;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+/* Formulario de contacto */
+#form{
+    border-radius: 5px;
+    background-color: rgb(46, 46, 46);
+    padding: 20px;
+}
+#form label{color: gray;font-size: 14px;}
+#form input{
+    font-weight: 600;
+    margin: 10px 0px;
+    background-color: rgb(73, 73, 73);
+    border: 0;
+    color: white;
+}
+#form input:focus-visible{
+    outline: 2px solid rgb(65, 163, 255);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.308);
+}
+#form textarea{
+    font-weight: 600;
+    margin: 10px 0px;
+    background-color: rgb(73, 73, 73);
+    border: 0;
+    color: white;
+}
+#form textarea:focus-visible{
+    outline: 2px solid rgb(65, 163, 255);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.308);
+}
+input,text{
+    border-radius: 8px;
+    border: solid 1px rgb(201, 201, 201);
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+}
+input,select{
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgb(73, 73, 73);
+    border: 0;
+    color: white;
+}
+input:focus-visible,select:focus-visible{
+    outline: 2px solid rgb(65, 163, 255);
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.308);
+}
+#botones{
+    float: right;
+    display: flex;
+}
+select{width: 100%;}
+textarea{
+    border-radius: 8px;
+    border: solid 1px rgb(201, 201, 201);
+    padding: 8px;
+    width: 100%;
+    resize: vertical;
+    box-sizing: border-box; /* El ancho del contenido incluye el padding y el borde, para que no se pase de las dimensiones */
+    resize: none; /* No se pueden cambiar lad dimensiones de la caja de texto. Pero es posible usar resize: height y resize: width para cambiar solo el alto
+    o solo el ancho. */
+}
+/* label{padding: 12px 12px 12px 0px;margin-top: 12px;display: inline-block;} */
+#botonEnviar{background-color: rgb(65, 163, 255);transition: ease 0.5s;}
+#botonEnviar:hover{background-color: rgb(65, 109, 255);transition: ease 0.5s;transform: scale(1.06);}
+#botonReset{background-color: rgb(73, 73, 73);}
+#botonReset:hover{background-color: rgb(85, 85, 85);}
+input[type=reset],input[type=submit]{
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 30px 4px;
+    cursor: pointer;
+    float: right;
+}
